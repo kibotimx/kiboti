@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiboti - Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,17 +20,20 @@
     </header>
     <main>
         <section class="hero">
-            <h2>Welcome to Kiboti</h2>
-            <p>Your smart solution for modern automation.</p>
-            <a href="#contact" class="cta">Get Started</a>
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h2 class="fade-in">Welcome to <span class="brand">Kiboti</span></h2>
+                <p class="fade-in delay-1">Your smart solution for modern automation.</p>
+                <a href="#contact" class="cta fade-in delay-2">Get Started</a>
+            </div>
         </section>
         <section id="features">
             <h3>Features</h3>
-            <ul>
-                <li>Easy Integration</li>
-                <li>AI-Powered Automation</li>
-                <li>24/7 Support</li>
-            </ul>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up"><span>🔌</span><h4>Easy Integration</h4><p>Connect with your favorite tools in seconds.</p></div>
+                <div class="feature-card fade-in-up delay-1"><span>🤖</span><h4>AI-Powered Automation</h4><p>Let smart bots handle repetitive tasks for you.</p></div>
+                <div class="feature-card fade-in-up delay-2"><span>💬</span><h4>24/7 Support</h4><p>Always here to help, any time you need us.</p></div>
+            </div>
         </section>
         <section id="about">
             <h3>About Kiboti</h3>
@@ -35,9 +41,11 @@
         </section>
         <section id="contact">
             <h3>Contact Us</h3>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
                 <textarea placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
