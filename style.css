@@ -6,50 +6,9 @@ body {
     min-height: 100vh;
     transition: background 0.3s;
 }
-header {
-    background: #181f2a;
-    color: #fff;
-    padding: 1.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 12px rgba(24,31,42,0.07);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    letter-spacing: 1px;
-}
-nav a {
-    color: #fff;
-    margin-left: 2rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.2s;
-    position: relative;
-}
-nav a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #63b3ed;
-    transition: width .3s;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-}
-nav a:hover::after {
-    width: 100%;
-}
-nav a:hover {
-    color: #63b3ed;
+/* Remove header and contact section styles */
+header, nav, .contact-form, #contact {
+    display: none !important;
 }
 .hero {
     position: relative;
